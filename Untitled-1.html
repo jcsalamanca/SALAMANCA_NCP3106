@@ -1,0 +1,345 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Carlo Salamanca - Online Resume & Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #343a40;
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px;
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+
+        .home-section {
+            background: url('bg1.png') no-repeat center center/cover;
+            height: 100vh;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .home-section h1 {
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .home-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .philosophy-heading,
+        .philosophy-quote {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .philosophy-quote {
+            font-style: italic; /* Optional: Adds emphasis to the quote */
+            margin-top: 10px; /* Optional: Adds a little space above the quote */
+        }
+
+        .resume-section, .portfolio-section {
+            padding: 50px 0;
+        }
+
+        .resume-item, .portfolio-item {
+            margin-bottom: 30px;
+        }
+        
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .contact-form {
+            background: url('bg1.png') no-repeat center center/cover;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Hello, I'm John Carlo Salamanca</h1>
+        <p>Aspiring Engineer from Pasig City</p>
+        <a href="#portfolio" class="btn btn-custom">Explore My Work</a>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-title">Resume</div>
+            <div class="section-subtitle">A summary of my professional background</div>
+            <div class="row">
+                <!-- Picture and Philosophy -->
+                <div class="col-md-12 resume-item text-center">
+                    <img src="mypix.jpg" alt="John Carlo Salamanca" class="img-fluid rounded-circle mb-3" style="max-width: 350px;">
+                    <h3 class="philosophy-heading">Philosophy</h3>
+                    <p class="philosophy-quote">“All our dreams can come true, if we have the courage to pursue them.”</p>
+                </div>
+                <!-- Education -->
+                <div class="col-md-6 resume-item">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>Bachelor of Science in Computer Engineering</strong> - University of the East, Manila (2022 - Present)</li>
+                        <li><strong>Sports Track Program</strong> - Rizal High School (2020 - 2022)</li>
+                        <li><strong>Special Program in Sports</strong> - Rizal High School (2016 - 2020)</li>
+                        <li><strong>Primary School</strong> - Palatiw Elementary School (2010 - 2016)</li>
+                    </ul>
+                </div>
+                <!-- Skills -->
+                <div class="col-md-6 resume-item">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Python, C++, JavaScript</li>
+                        <li><strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+                        <li><strong>Software Tools:</strong> Git, Tinkercad, Selenium</li>
+                        <li><strong>Other Skills:</strong> Problem-Solving, Team Collaboration, Time Management</li>
+                    </ul>
+                </div>
+                <!-- Work Experience -->
+                <div class="col-md-6 resume-item">
+                    <h3>Work Experience</h3>
+                    <ul>
+                        <li><strong>Intern - XYZ Tech Solutions</strong> (June 2023 - August 2023)
+                            <ul>
+                                <li>Assisted in developing web applications using JavaScript and React.</li>
+                                <li>Participated in code reviews and contributed to project documentation.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Freelance Web Developer</strong> (January 2022 - Present)
+                            <ul>
+                                <li>Developed and maintained websites for various clients using HTML, CSS, and JavaScript.</li>
+                                <li>Provided technical support and troubleshooting for clients.</li>
+                            </ul><br><br>
+                            <h3>Achievements</h3>
+                    <ul>
+                        <li><strong>TECH BRAWL:</strong> Where bits battle in the Computer Engineering Arena (3rd Placer)- (September 28, 2023)</li>
+                        <li><strong>PC Assembly and Disassembly Competition (Participator)</strong>- (April 22, 2024)</li>
+                        <li><strong>PC Assembly and Disassembly Competition (Champion)-</strong>- (April 22, 2024)</li>
+                    </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Certifications -->
+                <div class="col-md-6 resume-item">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><strong>1ST COMPUTER ENGINEERING TECHNOLOGY CONFERENCE GOING BEYOND REVOLUTIONS:</strong> Shaping the next generations of Computer Engineers - February 26, 2024</li>
+                        <li><strong>PROJECT MANAGEMENT 4.O:</strong> The Agile Advantage - February 27, 2024</li>
+                        <li><strong>WELCOME TO FLUTTERVERSE:</strong> A hands-on introduction to cross-platform Mobile App Development Workshop - February 26, 2024</li>
+                        <li><strong>CYBEERSENTINEL:</strong> A Cyber Security Exploration - February 26, 2024</li>
+                        <li><strong>Demystifying Artificial Intelligence:</strong> An Introduction and Its Practical Use Cases - September 26, 2023</li>
+                        <li><strong>Data Engineering in the Digital Age:</strong> Trends, Tools, and Techniques</strong> - September 29, 2023</li>
+                        <li><strong>Selenium:</strong> The Road to Reliable Software Testing Automation - September 29, 2023</li>
+                        <li><strong>Tinkercad + Arduino for Beginners</strong> - March 16, 2023</li>
+                        <li><strong>Ready. GIT. Set. Code:</strong> A Git Versioning Control System Workshop for Beginners - September 30, 2022</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="text-center mt-4">
+                <a href="CV_SALAMANCAJC.pdf" class="btn btn-custom" download>Download My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title">Portfolio</div>
+            <div class="section-subtitle">Some of my recent works</div>
+            <div class="row">
+                <div class="col-md-4 portfolio-item">
+                    <img src="p1.png" class="img-fluid" alt="Project 1">
+                    <h4 class="mt-3">Jack n' Poy</h4>
+                    <p>The Filipino version of the hand game "Rock, Paper, Scissors." It's a fun and simple game where two players simultaneously form one of three shapes with their hand: a rock (fist), paper (flat hand), or scissors (a fist with the index and middle fingers extended).</p>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <img src="p3.jpg" class="img-fluid" alt="Project 2">
+                    <h4 class="mt-3">Sumobot</h4>
+                    <p>A type of autonomous robot designed to participate in sumo-style competitions.</p>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <img src="p2.png" class="img-fluid" alt="Project 3">
+                    <h4 class="mt-3">In Between Game</h4>
+                    <p>The "In Between" game, also known as "Red Dog" or "Acey-Deucey," is a simple card game typically played with a standard deck of 52 cards. It’s popular in casual settings and is often used as a betting game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">Contact</div>
+            <div class="section-subtitle">Get in touch with me</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="">salamancajc0@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: +63 929 442 1034</p>
+                    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/john-carlo-salamanca-b58bab324/" target="_blank">https://www.linkedin.com/in/john-carlo-salamanca-b58bab324/</a></p>
+                    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/jcsalamanca" target="_blank">https://github.com/jcsalamanca</a></p>
+                </div>
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Carlo Salamanca. All rights reserved. | <a href="#home">Back to Top</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
